@@ -5,6 +5,7 @@ const gameContainer = document.querySelector('.game-container');
 const leftScoreDisplay = document.getElementById('leftScore');
 const rightScoreDisplay = document.getElementById('rightScore');
 const startButtons = document.querySelectorAll('.start-button');
+const resetButton = document.getElementById('reset-button'); // Ajout de la sélection du bouton "Relancer"
 
 let ballX = 400;
 let ballY = 200;
@@ -97,7 +98,7 @@ function updateGameArea() {
 
         if (leftScore === 7 || rightScore === 7) {
             alert(rightScore === 7 ? "Computer Wins!" : "Player Wins!");
-            location.reload();
+            location.reload(); // Rafraîchissez la page pour recommencer complètement la partie
         }
 
         resetBall();
@@ -160,6 +161,10 @@ function resetBall() {
     document.body.classList.remove('game-started');
 }
 
-updateGameArea();
+// Ajoutez un gestionnaire d'événements pour le bouton "Relancer"
+resetButton.addEventListener('click', () => {
+    // Rafraîchissez la page pour recommencer complètement la partie
+    location.reload();
+});
 
-
+updateGameArea(); // Maintenez cette ligne
