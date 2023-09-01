@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pong Game</title>
+</head>
+<body>
+    <div class="game-start-container">
+        <h1>PonGPT</h1>
+        <p>Contrôles en mode Solo : Souris pour la raquette de gauche<br>Contrôles en mode Duo : Z (haut) et S (bas) pour la raquette de gauche</p>
+        <button class="start-button" data-mode="solo">Solo</button>
+        <button class="start-button" data-mode="duo">Duo</button>
+    </div>
+
+    <div class="game-container">
+        <div class="half-court-line"></div>
+        <div class="paddle" id="leftPaddle"></div>
+        <div class="paddle" id="rightPaddle"></div>
+        <div class="ball" id="ball"></div>
+        <div id="tennis-lines">
+            <div class="line" style="top: 20%"></div>
+            <div class="line" style="top: 80%"></div>
+            <div class="net"></div>
+        </div>
+        <div class="score-container">
+            <div class="score-box" id="leftScore">0</div>
+            <div class="score-box" id="rightScore">0</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

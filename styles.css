@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #6B8E23; /* Couleur gazon exterieur */
+}
+
+.game-container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    background-color: #556B2F; /* Couleur gazon */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff; /* Bordures blanches pour les couloirs */
+}
+
+.half-court-line {
+    width: 2px;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.score-container {
+    display: flex;
+    justify-content: center; /* Centrer horizontalement les scores */
+    background-color: black; /* Couleur de fond noire */
+    padding: 10px;
+    position: absolute;
+    width: 80%; /* Ajustez la largeur pour centrer horizontalement */
+    top: 20px; /* Ajustez la position verticale */
+    left: 10%; /* Ajustez la position horizontale */
+    z-index: 1; /* Placez les scores au-dessus de la zone de jeu */
+}
+
+.score-box {
+    color: yellow; /* Couleur jaune pour les chiffres des scores */
+    font-size: 20px; /* Ajustez la taille de la police */
+    width: 48%;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid yellow; /* Ajout d'une bordure jaune autour des scores */
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond noire légèrement transparente */
+}
+
+.paddle {
+    position: absolute;
+    width: 10px;
+    height: 100px;
+    background-color: white;
+}
+
+#leftPaddle {
+    left: 0;
+}
+
+#rightPaddle {
+    right: 0;
+}
+
+.ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.score {
+    position: absolute;
+    font-size: 24px;
+    color: white;
+}
+
+#leftScore {
+    left: 20px;
+    top: 20px;
+}
+
+#rightScore {
+    right: 20px;
+    top: 20px;
+}
+
+/* Lignes du terrain de tennis */
+#tennis-lines {
+    position: absolute;
+    width: 800px;
+    height: 400px;
+    z-index: -1;
+}
+
+/* Ligne de service */
+.service-line {
+    position: absolute;
+    width: 2px;
+    height: 400px;
+    background-color: white;
+    left: 400px;
+}
+
+/* Filet central */
+.net {
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    background-color: white;
+    top: 175px;
+    left: 400px;
+}
+
+/* Couloirs */
+.alley {
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    border: 2px solid white;
+    opacity: 0.5;
+}
+
+#left-alley {
+    left: 0;
+}
+
+#right-alley {
+    right: 0;
+}
+.game-start-container {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    background-color: #0b380f; /* Fond vert foncé */
+    color: white;
+    font-weight: bold;
+}
+
+.game-start-container h1 {
+    font-size: 36px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.game-start-container p {
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.game-start-container button {
+    font-size: 24px;
+    background-color: #007f0e; /* Fond vert légèrement plus clair */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.game-start-container button:hover {
+    background-color: #00470b; /* Changement de couleur au survol */
+}
+
+.game-start-container button:focus {
+    outline: none; /* Supprime la bordure bleue de mise au point */
+}
