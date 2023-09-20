@@ -5,14 +5,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: 	#483D8B; /* Couleur gazon exterieur */
+    background-color: 	#1d04b5; /* Couleur gazon exterieur */
 }
 
 .game-container {
     position: relative;
     width: 800px;
     height: 400px;
-    background-color: #87CEFA; /* Couleur gazon */
+    background-color: #45a8f5; /* Couleur gazon */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,7 +136,7 @@ body {
     display: block;
     text-align: center;
     padding: 20px;
-    background-color: #0b380f; /* Fond vert foncé */
+    background-color: #1d04b5; /* Fond vert foncé */
     color: white;
     font-weight: bold;
 }
@@ -155,7 +155,7 @@ body {
 
 .game-start-container button {
     font-size: 24px;
-    background-color: #007f0e; /* Fond vert légèrement plus clair */
+    background-color: #45a8f5; /* Fond vert légèrement plus clair */
     color: white;
     border: none;
     padding: 10px 20px;
