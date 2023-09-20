@@ -5,14 +5,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #6B8E23; /* Couleur gazon exterieur */
+    background-color: 	#483D8B; /* Couleur gazon exterieur */
 }
 
 .game-container {
     position: relative;
     width: 800px;
     height: 400px;
-    background-color: #556B2F; /* Couleur gazon */
+    background-color: #87CEFA; /* Couleur gazon */
     display: flex;
     justify-content: center;
     align-items: center;
